@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "github_pro",
+			"path": "../../../../Desktop/github_pro"
+		},
+		{
+			"name": "jsonserver",
+			"path": "../../../jsonserver"
+		},
+		{
+			"name": "qutbank",
+			"path": "../../../qutbank"
+		},
+		{
+			"name": "gra_project",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "github_pro"
+	}
+}

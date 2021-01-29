@@ -1,0 +1,144 @@
+.combined-wrapper {
+  padding: 0;
+  /* background: linear-gradient(135deg, #329fff 1%, #8c00ff 100%); */
+  background: url(../ass/banner0.jpg) no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+  z-index: 100;
+}
+
+.combined-reload {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.combined {
+  color: #fff;
+  width: 316px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  top: -200px;
+}
+
+.combined1 {
+  transition: 0.5s ease-out all;
+  color: #fff;
+  width: 316px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  top: -300px;
+}
+
+.combined-shape {
+  position: relative;
+}
+
+.combined-shape>* {
+  width: 50%;
+  height: 64px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.combined-shape>*>* {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.combined-shape .shape-left {
+  left: 0;
+}
+
+.combined-shape .shape-right {
+  right: 0;
+}
+
+.combined .title,
+.combined1 .title {
+  font-size: 58px;
+  letter-spacing: 8px;
+  position: absolute;
+  width: 350px;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Playfair Display; */
+}
+
+.combined-bar {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 70px;
+}
+
+.combined .content,
+.combined1 .content {
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  top: 88px;
+  right: -20px;
+}
+
+.add-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: transparent;
+  width: 300px;
+  height: 25px;
+  /* margin-top: 0; */
+  top: 0px;
+  display: flex;
+  /* justify-content: space-between; */
+
+}
+
+.add-button span {
+  /* flex: 1; */
+  font-size: 17px;
+  color: white;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 46px;
+}
+
+.add-button span:last-of-type {
+  margin-right: 0;
+}
+
+.add-button span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 7px;
+  background-color: #fffeff;
+  left: 0;
+  opacity: 0.3;
+}
+
+.add-button span:hover::after {
+  transition: 0.3s ease-out all;
+  height: 12px;
+}
