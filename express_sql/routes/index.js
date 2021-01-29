@@ -7,9 +7,10 @@ router.get('/', function(req, res, next) {
 
   //查询users表
   db.query("SELECT * FROM stu",[],function(results,fields){
+    
+    res.render('index', { title: results[1].name });
     console.log(results);
-    console.log(000)
-    res.render('index', { title: results[0].name });
+    console.log(1)
   })
   
 });
