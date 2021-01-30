@@ -33,7 +33,7 @@ export default class Index extends Component {
 
         return (
             <>
-                <div className="queue-demo" style={{ height: '4000px', backgroundColor: ' #f7f7f7' }}>
+                <div className="queue-demo" style={{ height: '6000px', backgroundColor: ' #f7f7f7' }}>
                     <QueueAnim type={['right', 'left']} className="demo-content">
                         {this.state.show ? [
                             <QueueAnim className="demo-page" key="header" type="bottom">
