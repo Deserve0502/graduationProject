@@ -3,12 +3,12 @@ import BannerAnim, { Element } from 'rc-banner-anim';
 import TweenOne from 'rc-tween-one';
 import 'rc-banner-anim/assets/index.css';
 const BgElement = Element.BgElement;
-export default class MostComments extends Component {
+export default class MostCollect extends Component {
     render(){
         return (
-          <div className='most'>
+          <div className='most' style={{bottom:'0'}}>
           <div className='most-banner-title'>
-            最多回复
+            最多收藏
           </div>
           <BannerAnim prefixCls="banner-user"
           type={'across'}
@@ -28,7 +28,7 @@ export default class MostComments extends Component {
                 <div className='most-list'>
                   <img src="../bannerImg/banner4.jpg" alt=""/>
                   <div className='most-list-title'>
-                    一个标题一个标题
+                    一个标题一个标题一个标题一个标题一个标题一个标题一个标题一个标题
                   </div>
                 </div>
               </TweenOne>

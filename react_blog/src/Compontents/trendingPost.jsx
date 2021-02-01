@@ -5,7 +5,7 @@ import React, { Component, useState } from 'react'
 //import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
 import '../Style/post.css'
 import QueueAnim from 'rc-queue-anim';
-import { OverPack, Parallax } from 'rc-scroll-anim';
+import { OverPack} from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
 import '../Style/index.css'
 export default class TrendingPost extends Component {

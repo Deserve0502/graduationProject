@@ -90,7 +90,7 @@ export default   class   IndexBanner   extends   Component {
 
         );
     return (
-        <div style={{height:'455px'}}>
+        <div style={{height:'455px'}} className='index-banner'>
       <BannerAnim 
         onChange={this.onChange} 
         onMouseEnter={this.onMouseEnter} 

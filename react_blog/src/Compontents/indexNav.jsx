@@ -4,14 +4,15 @@ import React, { useState } from 'react'
 //import PropTypes from 'prop-types'
 //import axios from 'axios'
 //import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
-
+import { Parallax } from 'rc-scroll-anim';
 
 
 export default class IndexNav extends Component {
   
   render() {
     return (
-      <div className='index-nav'>
+      <>
+      <div className='index-nav'>  
       <span className='index-nav-logo'>
         顷&nbsp;&nbsp;刻
       </span>
@@ -24,8 +25,9 @@ export default class IndexNav extends Component {
         <li>关于</li>
         <li>欢迎你</li>
       </ul>
-
       </div>
+      
+      </>
     )
 
   }

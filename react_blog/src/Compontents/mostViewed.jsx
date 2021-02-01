@@ -9,7 +9,8 @@ import { OverPack, Parallax } from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
 import '../Style/index.css'
 import { Select, Pagination } from 'antd';
-
+import MostComments from '../Compontents/mostComments'
+import MostCollect from '../Compontents/mostCollect'
 const { Option } = Select;
 
 function handleChange(value) {
@@ -18,6 +19,7 @@ function handleChange(value) {
 export default class MostViewed extends Component {
     render() {
         return (
+            <>
             <div className='viewed-container safe'>
                 <div className='index-page-title'>
                     <p>最多点击</p>
@@ -116,7 +118,10 @@ export default class MostViewed extends Component {
 </div>
 
                 </OverPack>
+                <MostComments />
+                <MostCollect />
             </div>
+            </>
         )
     }
 }

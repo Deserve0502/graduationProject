@@ -3,8 +3,9 @@ import moment from 'moment'
 
 class AppStore {
     
-    @observable time = '20';
-    @observable todos = [];
+    @observable scrollshow = 'false';
+    @observable num = 1;
+    @observable todos = ['qq'];
     //尽量把需要改变的变量的方法用action写在store里面，这样可以更规范一些，也避免多人协作的麻烦
     @computed get desc() {
         return `${this.time}还有${this.todos.length}条任务待完成`
@@ -24,7 +25,9 @@ class AppStore {
     @action getNow() {
         this.time = moment().format('YYYY-MM-DD HH:mm:ss')
     }
-    
+    @action changeScroll(boolean){
+       this.scrollshow = boolean
+    }
     
 }
 

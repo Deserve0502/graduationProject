@@ -88,9 +88,11 @@ export default class addmission extends Component {
     return c;
   }
   goPage=(goPlace)=>{
-    if(goPlace == 'forlook'){
+    if(goPlace === 'forlook'){
       this.props.history.push( {pathname:'/index'})
-     
+    }
+    if(goPlace === 'login'){
+      this.props.history.push( {pathname:'/login'})
     }
     
   }
@@ -192,7 +194,7 @@ export default class addmission extends Component {
         delay={3000} 
         // interval={40}
         className={admission['add-button']}>
-          <span key="a"  onClick={this.showRegistDrawer}>立即登陆</span>
+          <span key="a"  onClick={()=>this.goPage('login')}>立即登陆</span>
 
           <span key="b" onClick={this.showLoginDrawer}>立即注册</span>
           <span key="c" onClick={()=>this.goPage('forlook')}>随便看看</span>
