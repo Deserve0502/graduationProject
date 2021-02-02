@@ -10,6 +10,8 @@ import TrendingPost from '../Compontents/trendingPost'
 import PopularPost from '../Compontents/popularPost'
 import MostViewed from '../Compontents/mostViewed'
 import ScrollNav from '../Compontents/scrollNav'
+import Goback from '../Compontents/goTop'
+import Footer from '../Compontents/footer'
 import QueueAnim from 'rc-queue-anim';
 import { Parallax } from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
@@ -26,7 +28,9 @@ export default class Index extends Component {
         return (
             <>
                 <ScrollNav />
-                <div style={{ height: '6000px', backgroundColor: ' #f7f7f7' }}>
+            <Goback />
+                <div style={{ height: '5460px', backgroundColor: ' #f7f7f7',position:'relative' }}>
+                <Footer  />
                     <QueueAnim className="demo-content">
                         {this.state.show ? [
                             <QueueAnim  key="header" >
@@ -47,6 +51,7 @@ export default class Index extends Component {
                                     <TrendingPost key="trending" />
                                     <PopularPost key='popular' />
                                     <MostViewed key='mostviewed' />
+                                  
                                 </QueueAnim>
 
                             </QueueAnim>,
