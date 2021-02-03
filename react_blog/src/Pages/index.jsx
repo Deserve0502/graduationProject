@@ -1,20 +1,15 @@
 import React, { Component } from 'react'
-// import ReactDom from 'react-dom'
-// import PropTypes from 'prop-types'
-// import axios from 'axios'
-// import { NavLink, Switch, Route, Redirect } from 'react-router-dom'
-import Addmission from '../Compontents/admission'
-import IndexNav from '../Compontents/indexNav'
-import IndexBanner from '../Compontents/indexBanner'
-import TrendingPost from '../Compontents/trendingPost'
-import PopularPost from '../Compontents/popularPost'
-import MostViewed from '../Compontents/mostViewed'
-import ScrollNav from '../Compontents/scrollNav'
-import Goback from '../Compontents/goTop'
-import Footer from '../Compontents/footer'
+import IndexNav from '../common/indexNav'
+import IndexBanner from '../compontents/index/indexBanner'
+import TrendingPost from '../compontents/index/trendingPost'
+import PopularPost from '../compontents/index/popularPost'
+import MostViewed from '../compontents/index/mostViewed'
+import ScrollNav from '../common/scrollNav'
+import Goback from '../common/goTop'
+import Footer from '../common/footer'
 import QueueAnim from 'rc-queue-anim';
 import { Parallax } from 'rc-scroll-anim';
-import TweenOne from 'rc-tween-one';
+import ParticlesBg from 'particles-bg'
 import store from '../store'
 import '../Style/index.css'
 import { observer } from 'mobx-react';
@@ -29,7 +24,9 @@ export default class Index extends Component {
             <>
                 <ScrollNav />
             <Goback />
-                <div style={{ height: '5460px', backgroundColor: ' #f7f7f7',position:'relative' }}>
+                <div style={{ height: '5460px', position:'relative' }}>
+                <ParticlesBg  type = 'cobweb'  bg = { true }  
+                color='#0f8b8d' num={300} />
                 <Footer  />
                     <QueueAnim className="demo-content">
                         {this.state.show ? [

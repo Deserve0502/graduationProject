@@ -14,7 +14,7 @@ body{
   height: 100%;
   overflow: auto;
   font-family: YouYuan !important;
- 
+ /* background-color: tomato; */
 }
 #root {
   height: 100%;
@@ -22,6 +22,7 @@ body{
 .safe {
 width: 80%;
 margin: auto;
+/* background-color: #f3f7f6; */
 }
 .clear:after {
   display: block;
@@ -30,4 +31,7 @@ margin: auto;
   height: 0;
   visibility: hidden;
   overflow: hidden;
+}
+canvas {
+  background-color: #f3f3f3 !important;
 }

@@ -1,13 +1,8 @@
-import React, { Component, useState } from 'react'
-//import ReactDom from 'react-dom' 
-//import PropTypes from 'prop-types' 
-//import axios from 'axios' 
-//import { NavLink,Switch,Route,Redirect } from 'react-router-dom' 
-// import '../Style/indexBanner.css' 
+import React, { Component } from 'react'
 import BannerAnim from 'rc-banner-anim';
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import 'rc-banner-anim/assets/index.css';
-import '../Style/index.css'
+import '../../Style/index.css'
 const { Element, Arrow, Thumb } = BannerAnim;
 const   BgElement = Element.BgElement;
 export default   class   IndexBanner   extends   Component {

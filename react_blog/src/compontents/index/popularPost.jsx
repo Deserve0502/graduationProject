@@ -1,14 +1,8 @@
-import React, { Component, useState } from 'react'
-//import ReactDom from 'react-dom'
-//import PropTypes from 'prop-types'
-//import axios from 'axios'
-//import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
-import '../Style/post.css'
+import React, { Component } from 'react'
 import QueueAnim from 'rc-queue-anim';
-import { OverPack, Parallax } from 'rc-scroll-anim';
-import TweenOne from 'rc-tween-one';
-import '../Style/index.css'
-import { Select,Pagination } from 'antd';
+import { OverPack } from 'rc-scroll-anim';
+import '../../Style/index.css'
+import { Select } from 'antd';
 
 const { Option } = Select;
 
@@ -23,14 +17,15 @@ export default class PopularPost extends Component {
                 <p>热门发帖</p>
                 <p>Popular Post</p>
             </div>
-            <OverPack style={{ overflow: 'hidden', height: 200,width:'90%',margin:'auto', }}
+            <div className='popular-page'>
+            <OverPack 
                     always={false}
                 >
-                   <div className='popular-page'>
+
                    
-                    <QueueAnim key="queue"
+                    <QueueAnim key="queue1"
                         leaveReverse
-                        
+                        type={'bottom'}
                     >
                         <div key="popu1" className="popular-post" >
                         <div className='popular-img'>
@@ -226,10 +221,15 @@ export default class PopularPost extends Component {
                         className='popular-pagin'
                         />, */}
                     </QueueAnim>
+                    </OverPack>
 
-                    <QueueAnim key="queue1"
+                    <OverPack 
+                    always={false}
+                >
+                    <QueueAnim key="queue2"
                         leaveReverse
-                        
+                        type={'bottom'}
+                        delay={500}
                     >
                     <div key='categroy' className='popular-categories'>
                     请选择分类：
@@ -245,7 +245,7 @@ export default class PopularPost extends Component {
     </Select>
     <div className='categroy-popular'>
 
-    <div className='cate-popu-post'>
+    <div className='cate-popu-post' key='cate1'>
             <div className='cate-popu-img'>
             <img src='../trendingImg/4.jpg' />
             </div>
@@ -262,7 +262,7 @@ export default class PopularPost extends Component {
             </div>
     </div>
 
-    <div className='cate-popu-post'>
+    <div className='cate-popu-post' key='cate2'>
             <div className='cate-popu-img'>
             <img src='../trendingImg/6.jpg' />
             </div>
@@ -279,7 +279,7 @@ export default class PopularPost extends Component {
             </div>
     </div>
 
-    <div className='cate-popu-post'>
+    <div className='cate-popu-post' key='cate3'>
             <div className='cate-popu-img'>
             <img src='../trendingImg/8.jpg' />
             </div>
@@ -296,7 +296,7 @@ export default class PopularPost extends Component {
             </div>
     </div>
 
-    <div className='cate-popu-post'>
+    <div className='cate-popu-post' key='cate4'>
             <div className='cate-popu-img'>
             <img src='../trendingImg/7.jpg' />
             </div>
@@ -316,8 +316,9 @@ export default class PopularPost extends Component {
                     </div>
                     </div>
                     </QueueAnim>
-                    </div>
+                    
                 </OverPack>
+                </div>
             </div>
         )
     }

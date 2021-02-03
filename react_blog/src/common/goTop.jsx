@@ -1,11 +1,5 @@
 import React, { Component, useState } from 'react'
-//import ReactDom from 'react-dom'
-//import PropTypes from 'prop-types'
-//import axios from 'axios'
-//import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
-//import store from 
-import { observer } from 'mobx-react'
-@observer
+import { UpOutlined } from '@ant-design/icons';
 export default class Gotop extends Component {
     state ={
         clientHeight:document.documentElement.clientHeight,
@@ -20,7 +14,6 @@ export default class Gotop extends Component {
             var osTop = document.documentElement.scrollTop || document.body.scrollTop;
          
             if (osTop >= 100) {
-                console.log('hh')
                 this.setState({
                     goTopShow:true
                 })
@@ -58,9 +51,15 @@ export default class Gotop extends Component {
     }
     render() {
         return (
-            <div className='goTop' onClick={()=>{this.handleScroll()}}>
-            qqqq
+          <>
+          {this.state.goTopShow===false?'':
+          <div className='goTop' onClick={()=>{this.handleScroll()}}>
+            <span className='icon-before'><UpOutlined /></span>
+            <span className='icon-after'><UpOutlined /></span>
             </div>
+          }
+          
+            </>
 )
 }
 }

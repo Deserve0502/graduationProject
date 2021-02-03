@@ -1,14 +1,11 @@
-import React, { Component, useState } from 'react'
-//import ReactDom from 'react-dom'
-//import PropTypes from 'prop-types'
-//import axios from 'axios'
-//import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
-import '../Style/post.css'
+import React, { Component } from 'react'
 import QueueAnim from 'rc-queue-anim';
 import { OverPack} from 'rc-scroll-anim';
-import TweenOne from 'rc-tween-one';
-import '../Style/index.css'
+import '../../Style/index.css'
 export default class TrendingPost extends Component {
+    state = {
+        
+    }
     render() {
         return (
             <div className='trending-container safe clear'>
@@ -25,6 +22,9 @@ export default class TrendingPost extends Component {
                         leaveReverse
                         style={{width:'110%',height:'600px',marginLeft:'-40px'  }}
                     >
+
+
+
                         <div key="a" className="trending-post" >
                         <span className='trending-up'>
                         </span>
@@ -58,6 +58,9 @@ export default class TrendingPost extends Component {
 
                         </div>
                         </div>
+
+
+
                         <div key="b" className="trending-post" >
                         <span className='trending-down'>
                         </span>

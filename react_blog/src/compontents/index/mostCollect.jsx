@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import BannerAnim, { Element } from 'rc-banner-anim';
 import TweenOne from 'rc-tween-one';
 import 'rc-banner-anim/assets/index.css';
@@ -71,6 +71,7 @@ export default class MostCollect extends Component {
             </Element>
           </BannerAnim>
           </div>
+        
           )
       }
 }

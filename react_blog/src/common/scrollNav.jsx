@@ -1,8 +1,5 @@
 import React, { Component, useState } from 'react'
-//import ReactDom from 'react-dom'
 import PropTypes from 'prop-types'
-//import axios from 'axios'
-//import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
 import store from '../store'
 import { observer } from 'mobx-react';
 @observer

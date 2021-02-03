@@ -3,15 +3,14 @@ import React, { Component, useState } from 'react'
 //import PropTypes from 'prop-types'
 //import axios from 'axios'
 //import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
-import { Drawer, Form, Button, Col, Row, Input, Select, DatePicker } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
-
-const { Option } = Select;
-
-export default class LoginDrawer extends Component {
+//import store from 
+import { observer } from 'mobx-react'
+@observer
+export default class Regist extends Component {
     render() {
         return (
             <div>
+            111
             </div>
 )
 }

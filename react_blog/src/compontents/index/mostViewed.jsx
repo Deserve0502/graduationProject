@@ -1,18 +1,10 @@
-import React, { Component, useState } from 'react'
-//import ReactDom from 'react-dom'
-//import PropTypes from 'prop-types'
-//import axios from 'axios'
-//import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
-import '../Style/post.css'
+import React, { Component } from 'react'
 import QueueAnim from 'rc-queue-anim';
-import { OverPack, Parallax } from 'rc-scroll-anim';
-import TweenOne from 'rc-tween-one';
-import '../Style/index.css'
-import { Select, Pagination } from 'antd';
-import MostComments from '../Compontents/mostComments'
-import MostCollect from '../Compontents/mostCollect'
-const { Option } = Select;
-
+import { OverPack } from 'rc-scroll-anim';
+import '../../Style/index.css'
+import { Select } from 'antd';
+import MostComments from './mostComments'
+import MostCollect from './mostCollect'
 function handleChange(value) {
     console.log(`selected ${value}`);
 }
@@ -29,7 +21,12 @@ export default class MostViewed extends Component {
                     always={false}
 
                 >
-                    <div className='viewed-banner-contain'>
+                 <QueueAnim key="queue00"
+                        leaveReverse
+                        duration={500}
+                        type={'bottom'}
+                        >
+                    <div className='viewed-banner-contain' key='view1'>
                         <div className='viwed-banner-img'>
                             <img src="../bannerImg/banner1.jpg" />
                         </div>
@@ -42,9 +39,9 @@ export default class MostViewed extends Component {
             </div>
                         </div>
                     </div>
-<div className='viewed-list-contain'>
+<div className='viewed-list-contain' >
 
-            <div className='viewed-list'>
+            <div className='viewed-list' key='view2'>
             <div className='viewed-list-img'>
             <img src="../bannerImg/banner3.jpg"/>
             </div>
@@ -64,7 +61,7 @@ export default class MostViewed extends Component {
            
 
 
-            <div className='viewed-list'>
+            <div className='viewed-list' key='view2'>
             <div className='viewed-list-img'>
             <img src="../bannerImg/banner3.jpg"/>
             </div>
@@ -81,7 +78,7 @@ export default class MostViewed extends Component {
                 文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容
             </div>
             </div>
-            <div className='viewed-list'>
+            <div className='viewed-list' key='view2'>
             <div className='viewed-list-img'>
             <img src="../bannerImg/banner3.jpg"/>
             </div>
@@ -98,7 +95,7 @@ export default class MostViewed extends Component {
                 文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容
             </div>
             </div>
-            <div className='viewed-list'>
+            <div className='viewed-list' key='view2'>
             <div className='viewed-list-img'>
             <img src="../bannerImg/banner3.jpg"/>
             </div>
@@ -116,7 +113,7 @@ export default class MostViewed extends Component {
             </div>
             </div>
 </div>
-
+</QueueAnim>
                 </OverPack>
                 <MostComments />
                 <MostCollect />

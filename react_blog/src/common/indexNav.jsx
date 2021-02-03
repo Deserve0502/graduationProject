@@ -1,12 +1,4 @@
-import { Component } from "react";
-import React, { useState } from 'react'
-//import ReactDom from 'react-dom'
-//import PropTypes from 'prop-types'
-//import axios from 'axios'
-//import { NavLink,Switch,Route,Redirect } from 'react-router-dom'
-import { Parallax } from 'rc-scroll-anim';
-
-
+import React, { Component } from 'react'
 export default class IndexNav extends Component {
   
   render() {

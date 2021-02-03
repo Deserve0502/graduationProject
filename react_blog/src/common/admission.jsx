@@ -1,20 +1,12 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import Texty from 'rc-texty';
 import 'rc-texty/assets/index.css';
 import TweenOne from 'rc-tween-one';
 import admission from '../Style/addmission.module.css'
-// import { Button } from 'antd';
-import store from '../store'
 import QueueAnim from 'rc-queue-anim';
-import { BrowserRouter, withRouter, Switch, Redirect, Route, Fragment, NavLink,HashRoute } from 'react-router-dom'
 import PropTypes from 'prop-types'
-
 import { Drawer, Form, Button, Col, Row, Input, Select, DatePicker } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
-
 const { Option } = Select;
-
-
 export default class addmission extends Component {
   static propTypes = {
     history:PropTypes.any,
@@ -172,7 +164,7 @@ export default class addmission extends Component {
                 ],
               }}
             >
-                 &nbsp;&nbsp;顷     刻
+                  &nbsp; 顷     刻 &nbsp;  
             </Texty>
             {/* <TweenOne
               className={admission["combined-bar"]}
@@ -194,10 +186,8 @@ export default class addmission extends Component {
         delay={3000} 
         // interval={40}
         className={admission['add-button']}>
-          <span key="a"  onClick={()=>this.goPage('login')}>立即登陆</span>
-
-          <span key="b" onClick={this.showLoginDrawer}>立即注册</span>
-          <span key="c" onClick={()=>this.goPage('forlook')}>随便看看</span>
+          <span key="a" onClick={()=>this.goPage('login')}>注册登陆</span>
+          <span key="b" onClick={()=>this.goPage('forlook')}>随便看看</span>
         </QueueAnim>
         <Drawer
           title="Create a new account"
