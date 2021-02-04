@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import QueueAnim from 'rc-queue-anim';
 import { OverPack } from 'rc-scroll-anim';
-import '../../Style/index.css'
+import '../../style/index.css'
 import { Select } from 'antd';
 import MostComments from './mostComments'
 import MostCollect from './mostCollect'

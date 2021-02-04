@@ -103,21 +103,21 @@
   margin-right: 40px;
   z-index: 1;
 }
-.index-nav-list li {
+.index-nav-list a {
   margin: 32px;
   color: #fff;
   font-size: 18px;
   position: relative;
   cursor: pointer;
 }
-.scroll-nav-list li {
+.scroll-nav-list a {
   margin: 32px;
   color: black;
   font-size: 18px;
   position: relative;
   cursor: pointer;
 }
-.index-nav-list li::after {
+.index-nav-list a::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -129,7 +129,7 @@
   opacity: 0.2;
   padding: 0 0px;
 }
-.scroll-nav-list li::after {
+.scroll-nav-list a::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -142,11 +142,11 @@
   padding: 0 0px;
 }
 
-.index-nav-list li:hover::after {
+.index-nav-list a:hover::after {
   padding: 0 30px;
   transition: 0.4s;
 }
-.scroll-nav-list li:hover::after {
+.scroll-nav-list a:hover::after {
   padding: 0 30px;
   transition: 0.4s;
 }

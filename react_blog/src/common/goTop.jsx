@@ -1,6 +1,9 @@
 import React, { Component, useState } from 'react'
 import { UpOutlined } from '@ant-design/icons';
-export default class Gotop extends Component {
+import store from '../store'
+import { observer } from 'mobx-react';
+
+@observer export default class Gotop extends Component {
     state ={
         clientHeight:document.documentElement.clientHeight,
         timer : null,
@@ -17,10 +20,12 @@ export default class Gotop extends Component {
                 this.setState({
                     goTopShow:true
                 })
+                store.changeScroll('true')
               } else {
                 this.setState({
                     goTopShow:false
                 })
+                store.changeScroll('false')
               }
             if (!this.state.isTop) {
               clearInterval(this.timer)
@@ -31,7 +36,11 @@ export default class Gotop extends Component {
            
           },true)
     }
-     
+    componentWillUnmount = () => {
+      this.setState = (state,callback)=>{
+        return;
+      };
+  }
     handleScroll = ()=>{    
         this.timer = setInterval(()=> {
             // 获取滚动条距离顶部的高度

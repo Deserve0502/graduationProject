@@ -8,21 +8,24 @@ import ScrollNav from '../common/scrollNav'
 import Goback from '../common/goTop'
 import Footer from '../common/footer'
 import QueueAnim from 'rc-queue-anim';
-import { Parallax } from 'rc-scroll-anim';
+
 import ParticlesBg from 'particles-bg'
 import store from '../store'
-import '../Style/index.css'
+import '../style/index.css'
 import { observer } from 'mobx-react';
 @observer
 export default class Index extends Component {
+    componentDidMount(){
+        store.changeScroll('false')
+    }
     state = {
         show: true,
-        srcollNavShow: false,
+
     }
     render() {
         return (
             <>
-                <ScrollNav />
+            <ScrollNav />
             <Goback />
                 <div style={{ height: '5460px', position:'relative' }}>
                 <ParticlesBg  type = 'cobweb'  bg = { true }  
@@ -39,9 +42,7 @@ export default class Index extends Component {
                                 </div>
                             </QueueAnim>,
                             <QueueAnim key="page" >
-                                <Parallax
-                                    animation={{ x: 0, playScale: [0.3, 0.4], onComplete: () => { store.changeScroll('true') }, onStartBack: () => { store.changeScroll('false') } }}
-                                />
+                              
                                 <QueueAnim component="ul"
                                     delay={300}
                                 >

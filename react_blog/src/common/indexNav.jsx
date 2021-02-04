@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink, Switch, Route, Redirect,BrowserRouter } from 'react-router-dom'
 export default class IndexNav extends Component {
   
   render() {
@@ -9,13 +10,12 @@ export default class IndexNav extends Component {
         顷&nbsp;&nbsp;刻
       </span>
       <ul className='index-nav-list'>
-        <li>首页</li>
-        <li>发现</li>
-        <li>博客</li>
-        <li>用户</li>
-        <li>即刻</li>
-        <li>关于</li>
-        <li>欢迎你</li>
+      <NavLink to='/index'>首页</NavLink>
+        <NavLink to='/found'>发现</NavLink>
+        <NavLink to='/found'>用户</NavLink>
+        <NavLink to='/found'>即刻</NavLink>
+        <NavLink to='/found'>关于</NavLink>
+        <NavLink to='/found'>欢迎你</NavLink>
       </ul>
       </div>
       
@@ -24,3 +24,5 @@ export default class IndexNav extends Component {
 
   }
 }
+
+

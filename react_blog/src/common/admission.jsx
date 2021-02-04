@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Texty from 'rc-texty';
 import 'rc-texty/assets/index.css';
 import TweenOne from 'rc-tween-one';
-import admission from '../Style/addmission.module.css'
+import admission from '../style/addmission.module.css'
 import QueueAnim from 'rc-queue-anim';
 import PropTypes from 'prop-types'
 import { Drawer, Form, Button, Col, Row, Input, Select, DatePicker } from 'antd';
@@ -163,8 +163,7 @@ export default class addmission extends Component {
                   { scale: 1, width: '100%', delay: -300, duration: 1000, ease: 'easeInOutQuint' },
                 ],
               }}
-            >
-                  &nbsp; 顷     刻 &nbsp;  
+            >&nbsp;顷       刻&nbsp;&nbsp;  
             </Texty>
             {/* <TweenOne
               className={admission["combined-bar"]}
@@ -194,7 +193,7 @@ export default class addmission extends Component {
           width={720}
           onClose={this.onLoginClose}
           visible={this.state.Loginvisible}
-          bodyStyle={{ paddingBottom: 80 }}
+          bodystyle={{ paddingBottom: 80 }}
           footer={
             <div
               style={{

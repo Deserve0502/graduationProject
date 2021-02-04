@@ -1,0 +1,134 @@
+.login {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-contain {
+    width: 1200px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .login-contain img {
+    border-radius: 5px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+  }
+  .login-input {
+    width: 600px;
+    height: 100%;
+    float: right;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .login-title {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 15px;
+    margin-bottom: 10px ;
+   
+    
+  }
+  .login-title span {
+    position: relative;
+  }
+  .login-title span::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 75%;
+    height: 23px;
+    left: 23px;
+    bottom: 7px;
+    background-color: #e5c37c;
+    z-index: -2;
+    opacity: 0.7;
+  }
+  .login-title-intro {
+    font-size: 12px;
+  }
+  .ant-form {
+    
+      font-size: 14px;
+    
+      width: 60%;
+     
+      margin: auto;
+  }
+  .ant-input-affix-wrapper {
+  
+    padding: 10px 11px;
+   
+    font-size: 14px;
+   
+    border-radius: 25px;
+  
+  }
+  .ant-form-item-has-error .ant-form-item-explain, .ant-form-item-has-error .ant-form-item-split {
+    color: #ff4d4f;
+    margin-left: 27px;
+  }
+  .ant-input-affix-wrapper-focused, .ant-input-affix-wrapper:focus {
+      border-color: #e5c37c;
+      border-right-width: 1px!important;
+      outline: 0;
+      box-shadow: 0 6px 5px rgb(0 0 0 / 15%);
+  }
+  
+  .ant-input-affix-wrapper:hover {
+      border-color: #e5c37c;
+      border-right-width: 1px!important;
+  }
+  .login-form-button {
+    width: 100%;
+    background-color: #e5c37c;
+    border: none;
+    border-radius: 5px;
+  }
+  .login-form-button:hover {
+    background-color: #0f8b8d;
+  }
+  .login-form-forgot {
+    color:  #e5c37c;
+  }
+  .login-form-forgot:hover {
+    color:  #0f8b8d;
+  }
+  .regist-contain {
+    width: 80%;
+    margin: auto;
+  }
+
+
+
+.ant-input-group-addon {
+    padding: 0;
+    border: none !important;
+    
+}
+.regist-contain .ant-btn {
+  height: 43px;
+  width: 100px;
+  background-color: #e5c37c !important;
+  ;
+  border: none !important;
+  
+}
+.regist-contain .ant-btn1 {
+  height: 43px;
+  width: 100px;
+  border: none !important;
+  background-color: #e5c37c !important;
+  ;
+}
+.ant-btn:hover {
+  background-color: #0f8b8d !important;
+}

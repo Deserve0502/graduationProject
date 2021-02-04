@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import QueueAnim from 'rc-queue-anim';
 import { OverPack} from 'rc-scroll-anim';
-import '../../Style/index.css'
+import '../../style/index.css'
 export default class TrendingPost extends Component {
     state = {
         
@@ -20,7 +20,7 @@ export default class TrendingPost extends Component {
                     <div className='trending-page '>
                     <QueueAnim key="queue"
                         leaveReverse
-                        style={{width:'110%',height:'600px',marginLeft:'-40px'  }}
+                        style={{width:'120%',height:'600px',marginLeft:'-40px'  }}
                     >
 
 

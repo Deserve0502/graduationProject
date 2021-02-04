@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import BannerAnim from 'rc-banner-anim';
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import 'rc-banner-anim/assets/index.css';
-import '../../Style/index.css'
+import '../../style/index.css'
 const { Element, Arrow, Thumb } = BannerAnim;
 const   BgElement = Element.BgElement;
 export default   class   IndexBanner   extends   Component {
