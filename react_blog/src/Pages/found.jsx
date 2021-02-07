@@ -14,7 +14,7 @@ import Footer from '../common/footer'
 import ScrollNav from '../common/scrollNav'
 import IndexNav from '../common/indexNav'
 import FoundNav from '../compontents/found/foundNav'
-
+import FoundCateGoryList from '../compontents/found/foundCategoryList'
 import { observer } from 'mobx-react'
 @observer
 export default class Found extends Component {
@@ -38,15 +38,16 @@ export default class Found extends Component {
                     <QueueAnim className="demo-content">
                         {this.state.show ? [
                             <QueueAnim  
-                            key='found-contain' >
+                            key='foundcontain' >
                                 <div key="found" >
                                     <QueueAnim component="ul">
                                         <IndexNav 
-                                            key='found-indexnav'
+                                            
                                         />
                                         <FoundNav 
-                                            key='found-foundnav'
+                                        
                                         />
+<FoundCateGoryList/>
                                         
                                     </QueueAnim>
                                 </div>
